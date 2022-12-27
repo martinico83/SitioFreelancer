@@ -9,7 +9,15 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-snap-type: y mandatory;
 }
+
+/* Scroll snap */
+.servicio, .navegacion-principal, .formulario{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
 
 *,
 *:before,
@@ -175,6 +183,7 @@ h3 {
 .contenido-hero p {
   color: var(--blanco);
 }
+
 
 @media (min-width: 768px) {
   .servicios {
